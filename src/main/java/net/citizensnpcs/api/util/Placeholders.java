@@ -34,15 +34,7 @@ public class Placeholders {
     }
 
     private static String setPlaceholderAPIPlaceholders(String text, OfflinePlayer player) {
-        if (!PLACEHOLDERAPI_ENABLED) {
-            return text;
-        }
-        try {
-            return PlaceholderAPI.setPlaceholders(player, text);
-        } catch (Throwable t) {
-            PLACEHOLDERAPI_ENABLED = false;
-            return text;
-        }
+        return text;
     }
 
     private static final String[] CITIZENS_PLACEHOLDERS = { "<id>", "<npc>", "<owner>" };

@@ -131,7 +131,6 @@ public class Inventory extends Trait {
 
     @Override
     public void run() {
-        saveContents(npc.getEntity());
         if (views.isEmpty())
             return;
         Iterator<InventoryView> itr = views.iterator();
